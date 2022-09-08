@@ -1,0 +1,118 @@
+/*Задаём стили на весь проект*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+/*задаём стили для body*/
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(194, 201, 232, 1) 0%,
+    rgba(61, 65, 83, 1) 100%
+  );
+}
+/*Задаём стили классу .todo-app*/
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 600px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  margin: 32px;
+}
+
+/*Задаём стили классу .click-btn*/
+.click-btn {
+  margin-right: 5px;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 4px 12px;
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+/*Задаём стиль оглавлению*/
+h1 {
+  margin: 32px 0;
+  font-size: 33px;
+}
+
+/*Задаём стили классу .complete*/
+.complete {
+  text-decoration: line-through;
+}
+
+/*Задаём стили классу .todo-from*/
+.todo-form {
+  /* flex: 0.5; */
+  padding: 0px 30px;
+}
+
+/*Задаём стили классу .todo-input*/
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgba(17, 122, 255, 1);
+  outline: none;
+  width: 100%;
+}
+
+/*Задаём стили классу .todo-button*/
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 122, 255, 1) 0%,
+    rgba(20, 159, 255, 1) 100%
+  );
+  color: white;
+  text-transform: capitalize;
+  margin-top: 24px;
+}
+
+/*Задаём стили классу .todo-container*/
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* height: 100%; */
+}
+
+/*Задаём стили классу .todo-row*/
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+/*Задаём стили классу .iconsContainer*/
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*Задаём стили классу .todo-border*/
+.todo-border{
+  cursor: pointer;
+  height: inherit;
+  width: 5px;
+  background-color: rgb(103, 103, 103);
+}
